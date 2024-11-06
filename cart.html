@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an eCommerce project for making shipon express">
+    <title>HTML CSS eCommerce project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- navbar starts here -->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="login.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link">
+                    <img class="profile-icon" src="./image/Profile.png" alt="profile">
+                </a>
+            </li>
+        </ul>
+
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__brand nav__link">Shipon Express
+                </a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">
+                    <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    cart 2 products - $124.40
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- navbar ends here -->
+
+    <!-- main content starts here -->
+    <main>
+        <div class="cart flex-center">
+           <div class="cart__items">
+                <div class="cart__items-headings card">
+                    <h2>Shopping Cart [2 items]</h2>
+                    <div class="cart__items-action">
+                        <label for="select">
+                            <input type="checkbox" name="select" id="select">
+                            Select all items
+                        </label>
+                        <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                        <button class="btn">Shop More</button>
+                    </div>
+                </div>
+
+                <div class="cart__item card flex-space-around">
+                    <input type="checkbox" name="" id="">
+                    <img src="./image/products 4.jpg" alt="product 1" class="cart__item-img">
+
+                    <div class="cart__item-description">
+                        <h3 class="product__name">I-Phone</h3>
+                        <h4 class="product__price">Price: $710.92</h4>
+                        <p class="cart__item-shipping">Free Shipping</p>
+                    </div>
+                    <div class="cart__item-actions">
+                        <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                        <div>
+                            <button class="btn"><i class="fas fa-add"></i></button>
+                            <span>3</span>
+                            <button class="btn"><i class="fas fa-minus"></i></button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="cart__item card flex-space-around">
+                    <input type="checkbox" name="" id="">
+                    <img src="./image/products 5.jpg" alt="product 2" class="cart__item-img">
+
+                    <div class="cart__item-description">
+                        <h3 class="product__name">Logitec Headphone</h3>
+                        <h4 class="product__price">Price: $250.42</h4>
+                        <p class="cart__item-shipping">Free Shipping</p>
+                    </div>
+                    <div class="cart__item-actions">
+                        <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                        <div>
+                            <button class="btn"><i class="fas fa-add"></i></button>
+                            <span>3</span>
+                            <button class="btn"><i class="fas fa-minus"></i></button>
+                        </div>
+                    </div>
+                </div>
+           </div> 
+           <div class="cart__payments">
+                <div class="cart__payments-summery card">
+                    <h2>Payment Summery</h2>
+                    <div>
+                        <p>Subtotal:</p>
+                        <p>$350.66</p>
+                    </div>
+                    <div>
+                        <p>Shipping Cost:</p>
+                        <p>$2</p>
+                    </div>
+                    <div>
+                        <p>Total:</p>
+                        <p>$352.66</p>
+                    </div>
+                    <button class="btn cart__payments-btn">Pay Now</button>
+                </div>
+                <div class="cart__payments-methods card">
+                    <h2>Payment Methods</h2>
+                    <div>
+                        <i class="fa-brands fa-cc-visa fa-3x"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-cc-amex fa-3x"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                    </div>
+                </div>
+           </div> 
+        </div>
+    </main>
+    <!-- main content ends here -->
+
+    <!-- footer starts here -->
+    <footer>
+        <div>
+            <p>&copy; Copyright 2024 Shipon Express. All right reserved</p>
+        </div>
+    </footer>
+    <!-- footer starts here -->
+
+    <script src="./app.js"></script>
+</body>
+</html>
